@@ -1,0 +1,20 @@
+{ "rentals": [{
+    "owner": "John Doe",
+    "city": "Toronto",
+    "type": "House",
+    "bedrooms": 6,
+    "image": "http://i.huffpost.com/gen/2872266/images/n-INTEGRAL-HOUSE-large570.jpg"
+  }, {
+    "owner": "Mike James",
+    "city": "Seattle",
+    "type": "Condo",
+    "bedrooms": 1,
+    "image": "http://seattlecondosandlofts.com/wp-content/uploads/2012/03/Gallery_interior_903.jpg"
+  }, {
+    "owner": "Billy Hoyle",
+    "city": "New York",
+    "type": "Apartment",
+    "bedrooms": 3,
+    "image": "https://s-media-cache-ak0.pinimg.com/736x/a2/0a/4b/a20a4b7db55c139396e1a79490a5c666.jpg"
+  }]
+}
