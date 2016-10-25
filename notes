@@ -149,4 +149,23 @@ MODELS
     the same despite being in two different directions.
     -They do not automatically have access to models and other information within context of the route in which they are called.
     -hen passing objects into a component the name on the left of = always refers to the variable name used within the component
-    -
+
+
+    COMPONENT -DELETE
+    -creating, deleting and updating objects in our data store should be handled by the route handler rather than within the component.
+    -Rental tile hbs, rental-tile.js,
+    -This component will not delete the object itself. Instead, it sends notification of our intent to delete this rental upwards through the template and into the route handler by calling this.sendAction().
+    -Ember follows the paradigm “Data down, actions up”
+    -Data must be passed downwards from the route, to the template, and into a component (as we did in previous lessons). Actions must be passed through each ‘level’ of the application in a similar fashion, but in the opposite direction: Actions move upwards from the component, to the template, into the route handler.
+
+    COMPONENT-SAVE
+    -Ember provides the {{input}} helper for form inputs that allows us to pass in a number of attributes. In this example, we are using only the value and id attributes.
+    -Note: When a field is not populated, its value will be undefined. Undefined is not a valid JSON type. Undefined values will prevent the record from being written to Firebase and cause an error. For fields that may be undefined, add a conditional that sets them to "" or null. Example: owner: this.get('owner') ? this.get('owner') : ""
+
+    EMBER DEBUGGING
+    -something did not work as expected, the first two places to check for messages are the server logs and the console.
+    -When we start the Ember server, JSHint runs to catch any possible errors or oversights in our JavaScript code. It will catch variables that are not defined, or defi
+
+    COMPONENTS - UPDATE
+
+    ***side note:  the route handler is the only portion of our application that should directly access model data
