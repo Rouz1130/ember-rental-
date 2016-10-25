@@ -10,6 +10,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('about');
   this.route('contact');
+  this.route('rental', {path: '/rental/rental_id'});//dynamic segment add with the {{path}}
 });
 
 export default Router; //allows the constant 'Router' avaliable to all parts of the application

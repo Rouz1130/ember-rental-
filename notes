@@ -169,3 +169,8 @@ MODELS
     COMPONENTS - UPDATE
 
     ***side note:  the route handler is the only portion of our application that should directly access model data
+
+    DYNAMIC ROUTING: FIND RECORD
+      Adding a dynamic segment
+      -we want our new rental route to display details for a single rental object. All previous routes we've constructed return all of an object.
+      -dynamic segment is simply a placeholder that may be dynamically updated depending on the circumstances
