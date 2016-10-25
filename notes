@@ -149,3 +149,4 @@ MODELS
     the same despite being in two different directions.
     -They do not automatically have access to models and other information within context of the route in which they are called.
     -hen passing objects into a component the name on the left of = always refers to the variable name used within the component
+    -
