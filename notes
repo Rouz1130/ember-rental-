@@ -1,0 +1,151 @@
+Ember strives to be the best choice for these ambitious web applications.
+"client-side-MVC"
+
+CONCEPTS and tools that we'll use in the next two weeks include:
+
+MVC
+"Convention over configuration"
+Routes
+Handlebars
+Templates
+Ember Data and models
+Firebase
+Components
+Custom helpers
+Services
+
+
+INSTALLS:
+HOME DIRECTORY:
+npm install -g bower
+
+npm install -g ember-cli
+
+ember new project-name
+
+ember server: localhost:4200
+
+
+IMPORVE BUILD TIMES:
+
+npm install ember -cli-windows -g
+ember -cli-windows
+
+FILE STRUCTURE FOR MAKING FILES:
+ember g route (file name) ...create three files a hbs file, a js file and imports the new file in our routes.
+
+*Whenever there is a -g tag on an install : its installed globally to the machine therefore
+to start a new project no need for global tag.
+
+ember install emberfire    connect and install emberfire
+
+EMBER CORE CONCEPTS:
+
+-Ember is one of many "client-side MVCs". MVC stands for "model-view-controller"
+acronym, "MTC", or "model-template-component" would perhaps be more accurate
+
+-MODELS- persist data
+-TEMPLATE- present data and user interface.
+-COMPONENTS- handle how application behaves between USER INTERFACE, TEMPLATES, and MODELS.
+
+URL, ROUTER AND ROUTE HADLER:
+
+-the URL can be set in many different ways on a web-application
+
+-No matter how the URL is determined, the Ember ROUTER always maps the URL to a ROUTE-HANDLER first
+  ROUTE HANDLER .....HAS  2 REPSONSEBILITES ONCE LOADED URL.
+    -Renders template
+    -loads MODEL information made avaliable via TEMPLATE.
+
+
+TEMPLATES:
+-Ember.js uses templates to organize the layout of HTML in an application
+*EXACTLY how templates are used in Angular; fragmented HTML code.
+-{{}}.....HANDLEBARS syntax is also used in Ember.
+-TEMPLATES can also display properties from a component or a route(which has access to a model).
+  eg. <div>Hi {{name}}, this is a valid Ember template!</div>
+
+-Essentially, they're a manner of inserting and displaying dynamic data in a template.
+
+
+COMPONENTS:
+
+-TEMPLATES: control how a user interface looks, COMPONENTS: control how the user interface behaves.
+-COMPONENTS consist of two files:
+  -1) TEMPLATE  written in handlebars...front end(hbs)extension
+  -2) JavaScript a source file.............(JS)extension
+
+  TEMPLATE ---defines what the COMPONENT should look like and the source file(JS) what functionality the COMPONENT
+  has.
+
+  Components are called from within templates, or within the .hbs portion of another component.
+  all front end appications are an example clicking a button , submitting a button , hiding and showing an image.
+    all examples of hbs files.
+
+
+
+
+APPLICATION SETUP AND STRUCTURE
+-relies on consistent naming convention to match corresponding portions of the application.
+*STRENGTH OF EMBER:  opting to minimize the amount of configuration necessary to get an application up and running
+
+
+EMBER CLI PROJECT SETUP DIRECTORY STRUCTURE
+
+APP- where folders and files for models, components, routes, templates and styles are stored. The vast majority of our coding happens in this folder.
+bower-components / bower.json:- bower is a dependency management tool. It is used to manage front-end plugins and component dependencies (HTML, CSS, JavaScript, etc).
+CONFIG- Contains the environment.js file which lists environmental settings and configurations for our app. We'll look at this more closely later.
+PUBLIC- This directory contains assets such as images and fonts.
+VENDOR- vendor: This directory is where any front-end dependencies NOT managed by bower reside
+TESTS/TESTEM.JSON - Contains automated tests for our app. Ember CLI's test runner testem is also configured in testem.json
+TMP - temporary files live here
+EMBER-CLI-BUILD.JS - Behind the scenes, Ember CLI uses a tool called Broccoli to compile our code. This file contains settings for how Broccoli should build our app
+
+
+
+ROUTES AND TEMPLATES
+
+{{OUTLET}}Helpers----provide basic functionality , such as linking between routes.{{link-to 'whatever template'}}
+-Notice the helper takes one simple argument: The name of the route this link should take the user
+-index route is special: It does NOT require an entry in the router. You'll also notice that generating this route did not alter app/router.js at all.
+-{{#each}}Helper this helper allows us to loop through each object in our model and display its information(model hook)
+
+MODELS
+  -route handler is the .js file that corresponds to the .hbs template file of the same name. The route handler is responsible for loading model data.
+  -This data is then available in the corresponding template. It may also be passed to any child components rendered within this template
+  - The route handler is the only part of an Ember application that can access model data. We can display model information in a template, but that template's route handler must retrieve it for the template.
+  *- A method within Ember is called a HOOK.
+
+
+    -Firebase ember install emberfire
+    -emberfire adds to our package.json file
+      -firebase to our bower.json file.
+
+
+  ADAPTORS
+    -connect our application to their data stores
+    -just know that ADAPTORS are responsible for connecting an application to its store.
+    -not very common to add code to our adaptors.
+
+
+    DATABASE/FIREBASE
+    -EMBER DATA- model management library called Ember Data.
+      -ember g model rental
+        -creates two files in our application: a model file and a test file.
+          -this new Js file in models folder is a blueprint that lists the attributes each rental should contain.
+
+          -Firebase ember install emberfire
+          -emberfire adds to our package.json file
+            -firebase to our bower.json file.
+
+            -Database name should always be plural "rental(s)"
+              -make a file called rentals.json for example
+
+        -SEEDING-pre loading the database with hard-coded data.
+
+    COMPONENTS
+    -File structure will be Kebab-case,.......rental-tile as an example.
+    -Component files have two parts as well. HBS and Js file. these two files are
+    the same despite being in two different directions.
+    -They do not automatically have access to models and other information within context of the route in which they are called.
+    -hen passing objects into a component the name on the left of = always refers to the variable name used within the component
