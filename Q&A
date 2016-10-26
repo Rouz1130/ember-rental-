@@ -1,0 +1,18 @@
+1.What does the Router do with the information from the URL?
+  A: Ember router always MAPs the URL to a Route-Handler(Js file).
+     which has two responsibilities: 1- Renders Template
+                                     2- Loads Model via Template.
+
+2. What is the Route Handler responsible for? What 'triggers' it into action, and what action does it then perform?
+  A: The HTTP/: request triggers it into action......And the action it performs it directs you to a particular web-page you triggered.
+
+
+3. What is the difference between a Route Handler and the Router? How do they interact?
+    A: Each state of a web application is represented by a URL. For Example
+    in an application were someone posts a message , hits a delete button, views
+    an image, or goes back a web page etc. All of these are encapsulated by Route handlers for the URL.
+    and both route handler and router are in communication and &there4; interact with one another.
+
+
+4. Where are templates located? What do they contain? How does one display a component within a template?
+  A:
