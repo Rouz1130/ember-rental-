@@ -21,5 +21,9 @@
     "author": "Andrea",
     "rating": 9,
     "content": "Nice view of the Ocean!"
+  }, {
+    "author": "Jason",
+    "rating": 7,
+    "content": "Close to public transportation"
     }]
 }
