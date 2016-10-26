@@ -175,3 +175,9 @@ MODELS
       -we want our new rental route to display details for a single rental object. All previous routes we've constructed return all of an object.
       -dynamic segment is simply a placeholder that may be dynamically updated depending on the circumstances
       - However, since the model in our rental route represents a single record, we can access its miscellaneous properties by calling model directly (ie: model.owner, model.type, etc).
+
+      ADDING A NEW model
+      - RSVP.hash. Ember RSVP.hash is a method included in Ember, built with the RSVP.js Library. It allows us to load multiple JavaScript promises at once.
+      -promise is an operation that hasn't completed yet, but is expected to in the very near future.
+      -A promise can be in one of three states: Pending, fulfilled, or rejected.
+      -The RSVP.hash returns a new promise that is only fulfilled when all promises it contains are fulfilled. This prevents asynchronous timing issues in your application by prompting Ember to wait for all necessary objects before rendering your templates and components. Otherwise, it could begin rendering after rentals has been returned, but before reviews have been successfully fetched from the database.

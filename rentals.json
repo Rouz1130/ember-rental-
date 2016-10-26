@@ -16,5 +16,10 @@
     "type": "Apartment",
     "bedrooms": 3,
     "image": "https://s-media-cache-ak0.pinimg.com/736x/a2/0a/4b/a20a4b7db55c139396e1a79490a5c666.jpg"
-  }]
+  }],
+  "reviews": [{
+    "author": "Andrea",
+    "rating": 9,
+    "content": "Nice view of the Ocean!"
+    }]
 }
