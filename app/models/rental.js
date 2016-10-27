@@ -5,7 +5,8 @@ export default DS.Model.extend({    //this line is telling it to exported and sa
   city: DS.attr(),
   type: DS.attr(),
   image:DS.attr(),
-  bedrooms: DS.attr()
+  bedrooms: DS.attr(),
+  reviews: DS.hasMany('review', {async: true})
 });
 
 //the DS stands for Data store , and the attr stands for attribute
