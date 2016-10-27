@@ -176,7 +176,7 @@ MODELS
       -dynamic segment is simply a placeholder that may be dynamically updated depending on the circumstances
       - However, since the model in our rental route represents a single record, we can access its miscellaneous properties by calling model directly (ie: model.owner, model.type, etc).
 
-      ADDING A NEW model
+      ADDING A NEW model(an example of a promise is a WhatsApp messenger:"when the user sees the message")
       - RSVP.hash. Ember RSVP.hash is a method included in Ember, built with the RSVP.js Library. It allows us to load multiple JavaScript promises at once.
       -promise is an operation that hasn't completed yet, but is expected to in the very near future.
       -A promise can be in one of three states: Pending, fulfilled, or rejected.
