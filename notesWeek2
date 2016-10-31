@@ -3,3 +3,7 @@ CUTSOM HELPERS
 -They are most often used to take input (often values from models or components)
 and return display output (often formatted data or other user interface).
 -ember g helper "name of file"
+-Ember.String.htmlSafe(); is a method that allows Ember to render our line of HTML. Ember escapes HTML by default to protect against cross-site scripting vulnerabilities. Without calling
+ Ember.String.htmlSafe(); the line<span class="glyphicon glyphicon-fire"></span> will appear literally on the page, instead of rendering our nice glyphicon. )
+
+ -Once you create a helper : Call the helper in our index Template(index.hbs)
