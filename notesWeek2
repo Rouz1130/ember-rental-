@@ -7,3 +7,14 @@ and return display output (often formatted data or other user interface).
  Ember.String.htmlSafe(); the line<span class="glyphicon glyphicon-fire"></span> will appear literally on the page, instead of rendering our nice glyphicon. )
 
  -Once you create a helper : Call the helper in our index Template(index.hbs)
+
+
+BASIC COMPUTED PROPERTIES:
+-Computed Properties allow us
+to declare functions as properties of an object.
+
+-They take existing properties, perform logic on them,
+ and return the result(s) when called.
+ 
+ -They differ from Helpers in that Helpers assist in altering user interface,
+ whereas computed properties create new properties for use within our application.
