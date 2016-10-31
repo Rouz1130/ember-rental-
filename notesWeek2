@@ -15,6 +15,11 @@ to declare functions as properties of an object.
 
 -They take existing properties, perform logic on them,
  and return the result(s) when called.
- 
+
  -They differ from Helpers in that Helpers assist in altering user interface,
  whereas computed properties create new properties for use within our application.
+
+ Computed property continued sorting
+  -Note: Make sure that the review rating is being saved as an Integer, and not a string in order to sort correctly.
+  If numerical values are saved as Strings, JavaScript, regardless of framework,
+  will think "76" is larger than "1000" because the first character is larger
