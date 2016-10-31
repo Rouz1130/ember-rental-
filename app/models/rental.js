@@ -7,6 +7,7 @@ export default DS.Model.extend({
   image: DS.attr(),
   bedrooms: DS.attr(),
   reviews: DS.hasMany('review', { async: true })
+  cost: DS.attr()
 });
 
 //the DS stands for Data store , and the attr stands for attribute
