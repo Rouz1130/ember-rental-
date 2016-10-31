@@ -1,0 +1,5 @@
+CUTSOM HELPERS
+-Helpers give us a tool to add custom display functionality to our templates.
+-They are most often used to take input (often values from models or components)
+and return display output (often formatted data or other user interface).
+-ember g helper "name of file"
